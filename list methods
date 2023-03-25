@@ -39,3 +39,23 @@ for i in range(3):
 
 print(sum(numlist))
 print(numlist[-1])
+
+#exercise2
+
+num5 = [11,13,15,17,18,11,14,12,13,17,14,16,18,19,14]
+numlist = []
+numlist2 = []
+for i in num5:
+    if num5.count(i) > 1:
+        numlist.append(num5.count(i))
+        if num5.count(i) in numlist:
+            pass
+            if num5.count(i) in numlist:
+                num5.count(i).pop
+            else:
+                numlist2.append(num5.count(i))
+        else:
+            break
+    else:
+        pass
+print(numlist2)
