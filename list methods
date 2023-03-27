@@ -59,3 +59,24 @@ for i in num5:
     else:
         pass
 print(numlist2)
+
+#extend
+
+num1 = [1,2,3,4,6,7,8]
+num2 = [10,11,12,14,15]
+
+num1.extend(num2)
+print(num1)
+
+numbers = [1,5,3,7,4,9,8,4,2]
+
+#sort
+numbers.sort()
+print(numbers)
+
+#sorted - maintain your original list and u create a new list based on sorted arrangement
+
+numbers = [11,16,12,18,19,30,8,10]
+numbersorted.sorted(numbers)
+print(numbers)
+print(numbersorted)
