@@ -112,3 +112,5 @@ else:
 finally:
     print("Operation conducted.")
 
+#Try and except is bounded together
+#else and finally is not
