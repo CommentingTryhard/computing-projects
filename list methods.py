@@ -86,3 +86,8 @@ print(numbersorted)
 numbers = [11,16,12,18,19,30,8,10]
 numbersorted = sorted(numbers, reverse = True)
 print(numbersorted)
+
+#reverse
+numbers = [11,16,12,18,19,30,8,10]
+numbers.reverse()
+print(numbers)
