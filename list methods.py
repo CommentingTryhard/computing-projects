@@ -77,6 +77,12 @@ print(numbers)
 #sorted - maintain your original list and u create a new list based on sorted arrangement
 
 numbers = [11,16,12,18,19,30,8,10]
-numbersorted.sorted(numbers)
+numbersorted = sorted(numbers)
 print(numbers)
+print(numbersorted)
+
+#reverse sorted
+
+numbers = [11,16,12,18,19,30,8,10]
+numbersorted = sorted(numbers, reverse = True)
 print(numbersorted)
