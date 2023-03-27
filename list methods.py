@@ -91,3 +91,24 @@ print(numbersorted)
 numbers = [11,16,12,18,19,30,8,10]
 numbers.reverse()
 print(numbers)
+
+#pop (index precision)
+numbers = [11,16,12,18,19,20,8,10]
+numbers.pop() #pop out last element
+    print(numbers)
+    
+#try, except, else, finally
+numbers = [11,16,12,18,19,20,8,10]
+
+try:
+    numbers.pop(3)
+    
+except:
+    print("There is an error detected.")
+    
+else:
+    print("Element got popped.")
+
+finally:
+    print("Operation conducted.")
+
