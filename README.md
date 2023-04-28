@@ -1,3 +1,3 @@
 # computing-projects
 
-place where i put all my code and resources.
+place where the bullshit is stored
