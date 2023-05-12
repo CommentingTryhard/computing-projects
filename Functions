@@ -31,3 +31,19 @@ def multiplier(c)
     return sum1()*c
     
 multiplier(5)
+#create 2 functions 
+#f1 = diff between a and b
+#f2 =  return f1, check whether %= 3/5
+
+def f1():
+    a = float(input("Please enter your input: "))
+    b = float(input("Please enter your input: "))
+    return abs(a-b)
+
+def f2():
+    diff = f1()
+    if diff%3==0 or diff%5==0:
+        print(diff)
+    else:
+        print("Not divisible by 3 or 5.")
+f2()
