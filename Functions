@@ -3,3 +3,31 @@ def greeting():
     print("Good Morning", name)
     
 greeting()
+
+def greeting(name = "People!"): 
+#name will default to people if no input in line 12
+    name = input("Please enter your name: ")
+    print("Good Morning", name)
+    
+greeting()
+
+def greeting(name = "People!"): #name will default to people if no input in line 5
+    if len(name)<5:
+        print("Good morning ",name,"you are SHORTASS BUDDY!")
+    else:
+        print("Good morning ",name,"you are too long")
+        
+greeting()
+
+#print statements and return statements
+#return statements help return the value to the function that calls for it
+def sum1(a,b):
+    a = int(input("Enter a value: "))
+    b = int(input("Enter a value: "))
+    return a+b
+    
+sum1(3,2)
+def multiplier(c)
+    return sum1()*c
+    
+multiplier(5)
