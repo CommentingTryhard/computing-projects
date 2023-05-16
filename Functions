@@ -52,3 +52,32 @@ def f1():
     name = list(input("Enter your name: "))
     print(name[:-1])
 f1()
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+"""
+program will take the shape and calculate the area 
+3 shap: circle triangle coob
+"""
+import math
+def shapes(n):
+    
+    def circle():
+        r = float(input("enter the radius: "))
+        area = math.pi * r**2
+    def triangle():
+        b = float(input("Enter base: "))
+        h = float(input("Enter height: "))
+        area = one*b*h
+    def cube():
+        s = float(input("Enter side length: "))
+        area = s**2*6
+        
+    if n == "circle":
+        return circle()
+    if n == "triangle":
+        return triangle()
+    if n == "cube":
+        return cube()
+        
+print(shapes("circle"))
