@@ -7,5 +7,4 @@ while flag:
             if byte[4] == " ":
                 print(byte)
                 flag = False
-            
-            
+                
