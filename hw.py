@@ -1,5 +1,5 @@
 def nric(entry):
-    def checker():
+    def checker(entry):
         if entry[0] == "S":
             if entry[1:7].isdigit():
                 if entry[8].isupper():
@@ -22,24 +22,17 @@ def nric(entry):
     #VARIABLES
     counter = 0
     flag = False
-    checker()
+
+    checker(entry)
     if flag != True:
         print("DEBUG: Counter R{}".format(counter))
         while counter <3:
+            entry = input("Please input ur nric again: ")
             checker()
             if flag == True:
                 counter+=1000000
             else:
-                pass
-        
-    
-    
-    
-    
-    
-    
-    
-    
+                pass   
 nric("S1234567p")
             
     
