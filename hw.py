@@ -5,24 +5,32 @@ def nric(entry):
                 if entry[8].isupper():
                     if entry[8].isalpha():
                         print("NRIC ACCEPTED!!!!!!!!")
+                        flag = True
                         break
                     else:
                         counter+=1
                         print("FAILURE")
-                        passe = entry
                 else:
                     counter+=1
                     print("FAILURE")
-                    passe = entry
             else:
                 counter+=1
                 print("FAILURE")
-                passe = entry
         else:
             counter+=1
             print("FAILURE")
-            passe = entry
-        
+    #VARIABLES
+    counter = 0
+    flag = False
+    checker()
+    if flag != True:
+        print("DEBUG: Counter R{}".format(counter))
+        while counter <3:
+            checker()
+            if flag == True:
+                counter+=1000000
+            else:
+                pass
         
     
     
