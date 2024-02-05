@@ -6,7 +6,6 @@ def nric(entry):
                     if entry[8].isalpha():
                         print("NRIC ACCEPTED!!!!!!!!")
                         flag = True
-                        break
                     else:
                         counter+=1
                         print("FAILURE")
