@@ -31,8 +31,6 @@ def nric(entry):
             if flag == True:
                 counter+=1000000
             else:
-                pass   
-nric("S1234567p")
+                pass
             
-    
-    
+nric("S1234567p")
