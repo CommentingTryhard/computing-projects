@@ -27,7 +27,7 @@ def sum1(a,b):
     return a+b
     
 sum1(3,2)
-def multiplier(c)
+def multiplier(c):
     return sum1()*c
     
 multiplier(5)
