@@ -18,7 +18,6 @@ if (chooser == "E") or (chooser == "e"):
         seclist.append(i)
     print(seclist)
     for index, value in enumerate(seclist):
-        print(value)
         if value in "!@#$%^&*()<>?:,./;'[]\`~|_+":
             pass
         else:    
