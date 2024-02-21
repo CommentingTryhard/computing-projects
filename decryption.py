@@ -33,9 +33,8 @@ if (chooser == "E") or (chooser == "e"):
                 seclist.pop(index)
                 seclist.insert(index, newletter)
     print(seclist)
-    for i in ():
-        if i == " ":
-            seclist.replace(i,"")
+    "".join(seclist)
+    print(seclist)
 elif (chooser == "d") or (chooser == "d"):
     pass
 
