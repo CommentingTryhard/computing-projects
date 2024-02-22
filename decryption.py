@@ -16,11 +16,10 @@ chooser = input("Would you like to encrypt or decrypt:(E/D) ")
 if (chooser == "E") or (chooser == "e"):
     for i in secret:
         seclist.append(i)
-    print(seclist)
     for index, value in enumerate(seclist):
         if value in "!@#$%^&*()<>?:,./;'[]\`~|_+":
             pass
-        else:    
+        elif value.islower():  
             lend = ord(value)+key
             if lend < 123:
                 newletter = chr(ord(value)+key)
@@ -31,11 +30,49 @@ if (chooser == "E") or (chooser == "e"):
                 newletter = chr(orde)
                 seclist.pop(index)
                 seclist.insert(index, newletter)
+        elif value.isupper():
+            lend = ord(value)+key
+            if lend < 91:
+                newletter = chr(ord(value)+key)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+            if lend > 90:
+                orde = lend+26
+                newletter = chr(orde)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+    seclist = "".join(seclist)
     print(seclist)
-    "".join(seclist)
+elif (chooser == "D") or (chooser == "d"):
+    for i in secret:
+        seclist.append(i)
+    for index, value in enumerate(seclist):
+        if value in "!@#$%^&*()<>?:,./;'[]\`~|_+":
+            pass
+        elif value.islower():  
+            lend = ord(value)-key
+            if lend > 96:
+                newletter = chr(ord(value)-key)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+            if lend < 97:
+                orde = lend+26
+                newletter = chr(orde)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+        elif value.isupper():
+            lend = ord(value)-key
+            if lend < 91:
+                newletter = chr(ord(value)-key)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+            if lend > 90:
+                orde = lend-26
+                newletter = chr(orde)
+                seclist.pop(index)
+                seclist.insert(index, newletter)
+    seclist = "".join(seclist)
     print(seclist)
-elif (chooser == "d") or (chooser == "d"):
-    pass
 
 else:
     print("Your letter was not able to be identified.")
