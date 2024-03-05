@@ -42,3 +42,12 @@ def splitter():
 def imcrazy():
     a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
     sentence
+
+lists = []
+def akai():
+    id = input("Enter ur id: ")
+    id = id.isupper()
+    if id in lists:
+        print("Permitted")
+    else:
+        print("Go suck balls")
