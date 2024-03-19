@@ -15,12 +15,20 @@ def scoreboard():
             scorelist[i].append(data[i+1][0])
         return scorelist #returns whether team scored + team number
     scorelist2 = parameter()
+    data = database()
     for o in range(len(scorelist2)-1):
-        scoredlist.append([])  
-    for value, index in enumerate(scorelist2):
-        if value[0] == "1":
-            scoredvalue = data[index][4]
-            scoredlist[index].append([scored])
-            scoredlist[index].append([index])
+        scoredlist.append([]) 
+    print(scoredlist) 
+    for i in scorelist2:
+        print(i)
+        if i[0] == 1:
+            x = i[1]
+            print(x)
+            scoredvalue = data[x][4]
+            scoredlist[i-1].append(scoredvalue)
+            scoredlist[i-1].append(x)
+        else:
+            pass
+    print(scoredlist)
 
 scoreboard()
