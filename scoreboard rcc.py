@@ -1,6 +1,5 @@
 def scoreboard():
-
-
+    scoredlist = []
     def database():
         #Guide to reading lists: L1 [0] = "N" [1] = "L" L2 [0] = "line" [1] = "timestamp" [2] = "teamid" [3] = "problemid" [4] = "inputid" [5] = "scored"
         database = [[5,5],[1,1,1,1,1,0],[2,2,1,1,1,1],[3,2,4,1,2,1],[4,3,2,1,2,0],[5,4,2,1,1,1]]
@@ -13,7 +12,15 @@ def scoreboard():
         for i in range(5):
             score = data[i+1][5]
             scorelist[i].append(score)
-            scorelist[i].append(data[i+1][1])
+            scorelist[i].append(data[i+1][0])
+        return scorelist #returns whether team scored + team number
+    scorelist2 = parameter()
+    for o in range(len(scorelist2)-1):
+        scoredlist.append([])  
+    for value, index in enumerate(scorelist2):
+        if value[0] == "1":
+            scoredvalue = data[index][4]
+            scoredlist[index].append([scored])
+            scoredlist[index].append([index])
 
-
-
+scoreboard()
