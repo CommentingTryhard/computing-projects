@@ -39,4 +39,5 @@ def submit():
     print("Saved and finished! Send your output file called {}".format(file_output_name))
 #
 # Good luck!
-# ----------------------------------------------------
+# ------------------------------------------------------
+print(check)
