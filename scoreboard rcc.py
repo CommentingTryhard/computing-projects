@@ -30,5 +30,5 @@ def scoreboard():
         else:
             pass
     print(scoredlist)
-
+print(balls)
 scoreboard()
