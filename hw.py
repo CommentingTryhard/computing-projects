@@ -17,6 +17,7 @@ def circle_area(circumference):
     radius = diameter/2
     area = 3.14*(radius**2)
     return area
+
 while flag:    
     shape = input("Please input what shape do you want to check for: ")
     if (shape.lower() == "square"):
