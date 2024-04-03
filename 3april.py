@@ -1,7 +1,10 @@
 studentcolour = []
+num_students = 10
+count=0
 flag = True
 def colourinput(studentcolour):
-    while flag:
+    while flag and (count<10):
+        count+=1
         colour = input("What is the student's favourite colour? ")
         cinput = input("Please enter if you would like to enter another colour (Y/N):")
         colour = colour.lower()
