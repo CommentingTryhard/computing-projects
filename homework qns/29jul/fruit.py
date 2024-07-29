@@ -6,6 +6,11 @@ while fruit != "":
     if fruit.lower() in fruitlist:
         for i in fruitlist:
             if i == fruit:
-                stock[i] += 1
+                newstock = stock[i]+1
+                stock.pop(i)
+                stock.insert(i, newstock)
+            else:
+                fruitlist.append(fruit)
+                stock.append("1")
 print(fruitlist)
 print(stock)
