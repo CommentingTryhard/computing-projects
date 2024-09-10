@@ -8,6 +8,13 @@ a) key = len(1)
 b) key = len(any)
 """
 
+"""
+plan:
+when statement is inputted:
+key*ord(i)
+
+"""
+
 secret = input("Enter your secret sentence: ")
 key = int(input("Please input your key: "))
 
@@ -22,15 +29,19 @@ if (chooser == "E") or (chooser == "e"):
         elif value.islower():  
             lend = ord(value)+key
             if lend < 123:
+                orde = lend
                 #break in
+                ordelist = []
                 pissorde = orde*key
-                if pissorde%2!=0:
-                    orde = str(pissorde)+r.randint()
+                if len(str(pissorde))%2!=0:
+                    orde = str(pissorde)+"1"
                 else:
-                    pass
-                for i in orde:
-                    if i%2==0:
-                        newletter = chr(orde[i]+orde[i+1])
+                    orde = pissorde
+                for i in str(orde):
+                    ordelist.append(i)
+                for inx, value in enumerate(ordelist):
+                    if (inx+1)%2!=0:
+                        newletter = chr(int(ordelist[inx]+ordelist[inx+1]))
                         seclist.insert(index+1, newletter)
                     else:
                         pass
@@ -38,14 +49,17 @@ if (chooser == "E") or (chooser == "e"):
             if lend > 122:
                 orde = lend-26
                 #break in
+                ordelist = []
                 pissorde = orde*key
-                if pissorde%2!=0:
-                    orde = str(pissorde)+r.randint()
+                if len(str(pissorde))%2!=0:
+                    orde = str(pissorde)+"1"
                 else:
-                    pass
-                for i in orde:
-                    if i%2==0:
-                        newletter = chr(orde[i]+orde[i+1])
+                    orde = pissorde
+                for i in str(orde):
+                    ordelist.append(i)
+                for inx, value in enumerate(ordelist):
+                    if (inx+1)%2!=0:
+                        newletter = chr(int(ordelist[inx]+ordelist[inx+1]))
                         seclist.insert(index+1, newletter)
                     else:
                         pass
@@ -53,15 +67,19 @@ if (chooser == "E") or (chooser == "e"):
         elif value.isupper():
             lend = ord(value)+key
             if lend < 91:
+                orde = lend
                 #break in
+                ordelist = []
                 pissorde = orde*key
-                if pissorde%2!=0:
-                    orde = str(pissorde)+r.randint()
+                if len(str(pissorde))%2!=0:
+                    orde = str(pissorde)+"1"
                 else:
-                    pass
-                for i in orde:
-                    if i%2==0:
-                        newletter = chr(orde[i]+orde[i+1])
+                    orde = pissorde
+                for i in str(orde):
+                    ordelist.append(i)
+                for inx, value in enumerate(ordelist):
+                    if (inx+1)%2!=0:
+                        newletter = chr(int(ordelist[inx]+ordelist[inx+1]))
                         seclist.insert(index+1, newletter)
                     else:
                         pass
@@ -69,19 +87,21 @@ if (chooser == "E") or (chooser == "e"):
             if lend > 90:
                 orde = lend+26
                 #break in
+                ordelist = []
                 pissorde = orde*key
-                if pissorde%2!=0:
-                    orde = str(pissorde)+r.randint()
+                if len(str(pissorde))%2!=0:
+                    orde = str(pissorde)+"1"
                 else:
-                    pass
-                for i in orde:
-                    if i%2==0:
-                        newletter = chr(orde[i]+orde[i+1])
+                    orde = pissorde
+                for i in str(orde):
+                    ordelist.append(i)
+                for inx, value in enumerate(ordelist):
+                    if (inx+1)%2!=0:
+                        newletter = chr(int(ordelist[inx]+ordelist[inx+1]))
                         seclist.insert(index+1, newletter)
                     else:
                         pass
                 seclist.pop(index)
-
     seclist = "".join(seclist)
     print(seclist)
 elif (chooser == "D") or (chooser == "d"):
