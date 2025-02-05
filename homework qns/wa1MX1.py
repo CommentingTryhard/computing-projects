@@ -29,4 +29,5 @@ if flag == False:
     else:
         print("uu need help")
 else:
-    
+    #i forgot whats this
+    print("yes")
