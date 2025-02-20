@@ -34,7 +34,7 @@
 		<label for="name">Name</label>
 		<input type="text" id="name" name="name"><br>
 		<label for="remarks">Remarks:</label><br>
-		<textarea id+"remarks" id="remarks" name="remarks" placeholder="Type in your remarks"></textarea><br>
+		<textarea id="remarks" id="remarks" name="remarks" placeholder="Type in your remarks"></textarea><br>
 		<input type="submit" value="Submit Form!"><br>
 		
 		
