@@ -2,13 +2,44 @@
 
 <html>
 <head>
-    <meta charset = "utf-8">
+    <meta charset = "UTF-8">
 	<title>Tutorial 1</title>
 </head>
 <body>
-    <h1>
+    <h1 style="color:blue">
         h2 computing
     </h1>
+	<img src="static/photo">
+	<div>
+		<table>
+			<tr>
+				<th>name</th>
+				<th>class</th>
+				<th>gender</th>
+			</tr>
+			<tr>
+				<td>rock</td>
+				<td>07</td>
+				<td>male</td>
+			</tr>
+		</table>
+	</div>
+	<p>requirement</p>
+	<ol>
+		<li>Mathematics background</li>
+		<li>interested in computing</li>
+	</ol>
+	
+	<form>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name"><br>
+		<label for="remarks">Remarks:</label><br>
+		<textarea id+"remarks" id="remarks" name="remarks" placeholder="Type in your remarks"></textarea><br>
+		<input type="submit" value="Submit Form!"><br>
+		
+		
+		
+	</form>
 </body>
 
 </html>
