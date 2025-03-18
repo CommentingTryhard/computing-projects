@@ -1,0 +1,5 @@
+name = input("Please input your name: ")
+age = int(input("Please input your age: "))
+colour = input("Please input your favourite colour: ")
+print(" ")
+print("{}\n{}\n{}\n".format(name,age,colour))
