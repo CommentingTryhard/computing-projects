@@ -57,3 +57,17 @@ def quick_sort(arr):
     left = [less for less in arr[1:] if less < mid]
     right = [more for more in arr[1:] if more > mid]
     return quick_sort(left) + [mid] + quick_sort(right)
+
+def linear_search(subj, arr):
+    for i in arr:
+        if i == subj:
+            return arr.index(i)
+    return False
+
+def binary_search(subj, arr): #ints or ordered elements only
+    mid = arr[len(arr)//2]
+    if subj == mid:
+        return subj
+    if mid << subj: binary_search(subj, arr[:mid])
+    else: return binary_search(subj, arr[mid:])
+
