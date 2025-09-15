@@ -68,6 +68,7 @@ def binary_search(subj, arr): #ints or ordered elements only
     mid = arr[len(arr)//2]
     if subj == mid:
         return subj
-    if mid << subj: binary_search(subj, arr[:mid])
-    else: return binary_search(subj, arr[mid:])
+    if mid << subj: binary_search(subj, arr[mid:])
+    else: return binary_search(subj, arr[:mid])
+
 
